@@ -4,26 +4,46 @@
         "id": "1",
         "src": "./img/product-chain-1.png",
         "title": "Front-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "description": "Skilled in creating intuitive and responsive user interfaces to enhance user engagement and experience."
       },
       {
         "id": "2",
         "src": "./img/tag-1.png",
         "title": "Back-End",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "description": "Capable of designing and implementing RESTful APIs, securing applications, and ensuring high performance and reliability in Java & Python based environments"
       },
       {
         "id": "3",
         "src": "./img/feather-pen-2.png",
-        "title": "UI & UX Design",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "title": "AWS Cloud Solutions",
+        "description": "Experienced in deploying and managing applications on AWS cloud infrastructure for scalability, reliability, and security"
       },
       {
         "id": "4",
         "src": "./img/feather-pen-1.png",
-        "title": "Webflow Development",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        "title": "Database Management",
+        "description": "Skilled in working with relational databases like PostgreSQL and ORM tools like SQL Alchemy, as well as MongoDB for NoSQL database management"
+      },
+      {
+        "id": "5",
+        "src": "./img/feather-pen-1.png",
+        "title": "Machine Learning Integration",
+        "description": "Experience in integrating machine learning algorithms for applications,showcasing proficiency in cutting-edge technologies to solve real-world problems"
+      },
+      {
+        "id": "6",
+        "src": "./img/feather-pen-1.png",
+        "title": "Agile Methodologies",
+        "description": "Engaged in Agile development methodologies, contributing to improved project delivery times through effective teamwork and steady project progress"
+      },
+      {
+        "id": "7",
+        "src": "./img/feather-pen-1.png",
+        "title": "Version Control and Deployment",
+        "description": "Proficient in Git for version control and Docker for containerization, ensuring efficient collaboration and deployment processes"
       }
+
+
     ],
     "portfolio": [
       {
