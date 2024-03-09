@@ -9,15 +9,15 @@ export default function AboutMe() {
             <p className="section--title">About</p>
             <h1 className="skills-section--heading">About Me</h1>
             <p className="hero--section-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-              recusandae? Voluptatem, reprehenderit alias? Eligendi aperiam
-              tempora numquam sint odit optio.
+                Driven by a passion for technology and innovation, I am a Software Developer with a Master's in 
+                Computer Science from the University of Central Missouri, holding expertise in front-end and back-end 
+                development, database optimization, and cloud technologies. My professional journey includes impactful roles at Rakuten India and Techigai, 
+                where I delivered significant improvements in application responsiveness, database efficiency, and user engagement. I have a proven track record of 
+                employing React, Python, and SQL to enhance user experiences and streamline operations.
             </p>
             <p className="hero--section-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-              officiis sit debitis omnis harum sed veniam quasi dicta accusamus
-              recusandae?
+                I thrive in collaborative environments that challenge me to solve complex problems 
+                and am always eager to apply my skills and creativity to contribute to the success of dynamic teams and innovative projects.
             </p>
           </div>
         </div>
