@@ -392,47 +392,53 @@ h2 {
 /* Portfolio Ends */
 
 /* Skills */
-.Skills--section {
+.Experience--section {
   display: flex;
-  padding: 112px 84.3px;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 80px;
-  background-color: var(--bg-shade);
-}
-.sections--heading {
-  color: var(--heading-color);
-}
-.Skills--section--card {
-  display: flex;
-  padding: 42.6px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 42.6px;
-  flex: 1 0 0;
-  border-radius: 8px;
-  border: 1.33px solid #006b6a;
-}
-.Skills--section--card--reviews {
-  display: flex;
-  align-items: flex-start;
-  gap: 5.33px;
-}
-.Skills--section--card--author--detail {
-  display: flex;
   align-items: center;
-  gap: 21.3px;
+  padding: 2rem 1.5rem;
+  gap: 2rem;
 }
-.Skills--author--name {
-  font-weight: 600;
-  color: var(--heading-color);
+
+.Experience--section--container {
+  display: flex; /* Changed from grid to flex */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on small screens */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
 }
-.Skills--author--designation {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
+
+.Experience-section--card--content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #ccc; /* Adds a border */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for depth */
+  padding: 1rem;
+  box-sizing: border-box;
+  margin: 0.5rem; /* Adds margin around each card for spacing */
+  flex: 1 1 200px; /* Allows flex items to grow and shrink, with a base width of 200px */
 }
+
+.experience-image {
+  max-width: 100%; /* Full width of the content box */
+  height: auto; /* Keep the original aspect ratio */
+}
+
+@media (max-width: 768px) {
+  .Experience--section--container {
+    justify-content: space-around; /* Even spacing on smaller screens */
+  }
+  
+  .Experience-section--card--content {
+    flex: 1 1 1; /* Smaller base width on small screens */
+  }
+}
+
+
+  
+
+
 /* Skills Ends */
 .contact--section {
   display: flex;

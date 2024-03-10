@@ -5,9 +5,7 @@ function Footer() {
   return (
     <footer className="footer--container">
       <div className="footer--link--container">
-        <div>
-          <img className="navbar--logo" src="./img/logo.jpg" alt="Dheeraj" />
-          
+        <div> 
         </div>
         <div className="footer--items">
           <ul>

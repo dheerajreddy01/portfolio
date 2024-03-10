@@ -68,30 +68,71 @@
         "link": "View In Github"
       }
     ],
-    "Skills": [
+    "Experience": [
       {
         "id": "1",
-        "count": "5",
-        "src": "./img/avatar-image.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Dianne Russel",
-        "author_designation": "Starbucks"
+        "src": "./img/html.png"
       },
       {
         "id": "2",
-        "count": "3",
-        "src": "./img/avatar-image-1.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Kristin Watson",
-        "author_designation": "Louis Vuitton"
+        "src": "./img/javascript.png"
       },
       {
         "id": "3",
-        "count": "5",
-        "src": "./img/avatar-image-2.png",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "author_name": "Kathryn Murphy",
-        "author_designation": "McDonald's"
+        "src": "./img/react.png"
+      },
+      {
+        "id": "4",
+        "src": "./img/node.png"
+      },
+      {
+        "id": "5",
+        "src": "./img/nextjs.png"
+      },
+      {
+        "id": "6",
+        "src": "./img/CSS.png"
+      },
+      {
+        "id": "7",
+        "src": "./img/Python.png"
+      },
+      {
+        "id": "8",
+        "src": "./img/java.png"
+      },
+      {
+        "id": "9",
+        "src": "./img/MySQL.png"
+      },
+      {
+        "id": "10",
+        "src": "./img/Mongodb.png"
+      },
+      {
+        "id": "11",
+        "src": "./img/AWS.png"
+      },
+      {
+        "id": "12",
+        "src": "./img/Bootstrap.png"
+      },
+      {
+        "id": "13",
+        "src": "./img/fastapi.png"
+      },
+      {
+        "id": "14",
+        "src": "./img/Redux.png"
+      },
+      {
+        "id": "15",
+        "src": "./img/git.png"
+      },
+      {
+        "id": "16",
+        "src": "./img/Springboot.png"
       }
+
     ]
   }
