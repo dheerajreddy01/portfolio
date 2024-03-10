@@ -140,7 +140,7 @@ h2 {
   display: flex;
   align-items: flex-start;
 }
-/* Portfolio, Testimonial & Contact Me */
+/* Portfolio, Skills & Contact Me */
 .sub--title {
   color: var(--heading-color);
   font-size: 16px;
@@ -391,8 +391,8 @@ h2 {
 }
 /* Portfolio Ends */
 
-/* Testimonial */
-.testimonial--section {
+/* Skills */
+.Skills--section {
   display: flex;
   padding: 112px 84.3px;
   flex-direction: column;
@@ -403,7 +403,7 @@ h2 {
 .sections--heading {
   color: var(--heading-color);
 }
-.testimonial--section--card {
+.Skills--section--card {
   display: flex;
   padding: 42.6px;
   flex-direction: column;
@@ -413,27 +413,27 @@ h2 {
   border-radius: 8px;
   border: 1.33px solid #006b6a;
 }
-.testimonial--section--card--reviews {
+.Skills--section--card--reviews {
   display: flex;
   align-items: flex-start;
   gap: 5.33px;
 }
-.testimonial--section--card--author--detail {
+.Skills--section--card--author--detail {
   display: flex;
   align-items: center;
   gap: 21.3px;
 }
-.testimonial--author--name {
+.Skills--author--name {
   font-weight: 600;
   color: var(--heading-color);
 }
-.testimonial--author--designation {
+.Skills--author--designation {
   color: var(--darkblue);
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
-/* Testimonial Ends */
+/* Skills Ends */
 .contact--section {
   display: flex;
   padding: 150px 85px;
@@ -630,7 +630,7 @@ input[type="checkbox"] {
     gap: 30px;
   }
   .skills--section,
-  .testimonial--section,
+  .Skills--section,
   .contact--section,
   .footer--container {
     gap: 20px;
@@ -642,7 +642,7 @@ input[type="checkbox"] {
     padding-top: 0;
     padding-bottom: 0;
   }
-  .testimonial--section--card {
+  .Skills--section--card {
     padding: 25px;
   }
   .hero--section--title,
@@ -745,4 +745,17 @@ input[type="checkbox"] {
   }
 }
 
+
+
+
 /* Responsive Screens Ends*/
+
+
+/* Logo */
+
+.navbar--logo{
+  width: 30%;
+  height:30%;
+}
+
+/* Logo Ends here */

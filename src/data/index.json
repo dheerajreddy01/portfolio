@@ -68,7 +68,7 @@
         "link": "View In Github"
       }
     ],
-    "testimonial": [
+    "Skills": [
       {
         "id": "1",
         "count": "5",
@@ -79,7 +79,7 @@
       },
       {
         "id": "2",
-        "count": "5",
+        "count": "3",
         "src": "./img/avatar-image-1.png",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
         "author_name": "Kristin Watson",
