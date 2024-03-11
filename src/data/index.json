@@ -48,24 +48,28 @@
     "portfolio": [
       {
         "id": "1",
-        "src": "./img/placeholder-image.png",
-        "title": "Ahuse",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "link": "View In Github"
+        "src": "./img/placeholder-image-1.png",
+        "title": "Rakuten Ticket Reseravation",
+        "description": "I contributed to the theatre segment of Rakuten Ticket, developing features for booking plays, seat selection, and managing Rakuten points, enhancing user engagement and loyalty.",
+        "link": "View In Github",
+        "linktoportal":"https://github.com/dheerajreddy01/Ticket"
       },
       {
         "id": "2",
-        "src": "./img/placeholder-image-1.png",
-        "title": "App Dashboard",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "link": "View In Github"
+        "src": "./img/test.png",
+        "title": "Monstograin",
+        "description": "Monitoring the Storage of food grains in warehouses continuously using IoT devices by considering the parameters of temperature, carbon dioxide, and humidity to detect and prevent spoilage of food grains in advance including the study of behavior using machine learning for accurate predictions.",
+        "link": "View In Github",
+        "linktoportal":"https://github.com/Monstograin" 
+       
       },
       {
         "id": "3",
-        "src": "./img/placeholder-image-2.png",
-        "title": "Easy Rentn",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
-        "link": "View In Github"
+        "src": "./img/placeholder-image.png",
+        "title": "Chat Application",
+        "description": "A React-based chat application enables real-time text messaging between users. It features direct and group messaging, with support for emojis and file sharing. Built with React, it offers a responsive, interactive user experience across devices.",
+        "link": "View In Github",
+        "linktoportal": "https://github.com/dheerajreddy01/chatApp"
       }
     ],
     "Experience": [

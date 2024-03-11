@@ -1,3 +1,5 @@
+
+
 import data from "../../data/index.json";
 
 export default function MyPortfolio() {
@@ -40,7 +42,8 @@ export default function MyPortfolio() {
                 <p className="text-md">{item.description}</p>
               </div>
               <p className="text-sm portfolio--link">
-                {item.link}
+              {item.link}
+               <a href={item.linktoportal}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
@@ -56,6 +59,7 @@ export default function MyPortfolio() {
                     stroke-linejoin="round"
                   />
                 </svg>
+                </a>
               </p>
             </div>
           </div>
