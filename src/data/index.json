@@ -48,7 +48,7 @@
     "portfolio": [
       {
         "id": "1",
-        "src": "./img/placeholder-image-1.png",
+        "src": "./img/test1.png",
         "title": "Rakuten Ticket Reseravation",
         "description": "I contributed to the theatre segment of Rakuten Ticket, developing features for booking plays, seat selection, and managing Rakuten points, enhancing user engagement and loyalty.",
         "link": "View In Github",
@@ -65,7 +65,7 @@
       },
       {
         "id": "3",
-        "src": "./img/placeholder-image.png",
+        "src": "./img/test3.png",
         "title": "Chat Application",
         "description": "A React-based chat application enables real-time text messaging between users. It features direct and group messaging, with support for emojis and file sharing. Built with React, it offers a responsive, interactive user experience across devices.",
         "link": "View In Github",
