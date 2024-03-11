@@ -103,6 +103,15 @@ function Navbar() {
               Skills
             </Link>
           </li>
+          <li>
+            <a
+              onClick={closeMenu}
+              href="./Dheerajreddy.pdf"
+              download="Dheeraj_Reddy_Resume.pdf"
+              className="navbar--content"
+              > Resume
+            </a>
+          </li>
         </ul>
       </div>
       <Link
