@@ -38,6 +38,7 @@ function Navbar() {
         <img className="navbar--logo" src="./img/logo.jpg" alt="Dheeraj" />
       </div>
       <a
+      href=""
         className={`nav__hamburger ${navActive ? "active" : ""}`}
         onClick={toggleNav}
       >
@@ -105,9 +106,9 @@ function Navbar() {
           </li>
           <li>
             <a
-              onClick={closeMenu}
-              href="./Dheerajreddy.pdf"
+            href="./Dheerajreddy.pdf"
               download="Dheeraj_Reddy_Resume.pdf"
+              onClick={closeMenu}
               className="navbar--content"
               > Resume
             </a>
