@@ -10,7 +10,7 @@ export default function AboutMe() {
             <p className="hero--section-description">
                 Driven by a passion for technology and innovation, I am a Software Developer with a Master's in 
                 Computer Science from the University of Central Missouri, holding expertise in front-end and back-end 
-                development, database optimization, and cloud technologies. My professional journey includes impactful roles at Rakuten India and Techigai, 
+                development, database optimization, and cloud technologies. My professional journey includes impactful roles at Rakuten India and NCR Corporation, 
                 where I delivered significant improvements in application responsiveness, database efficiency, and user engagement. I have a proven track record of 
                 employing React, Python, and SQL to enhance user experiences and streamline operations.
             </p>
