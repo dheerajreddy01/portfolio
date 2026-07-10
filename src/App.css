@@ -775,7 +775,7 @@ input[type="checkbox"] {
   --card: #ffffff;
   --bg-shade: #f7f6fd;
   --shadow-sm: 0 2px 10px rgba(28, 30, 83, 0.06);
-  --shadow-md: 0 12px 30px rgba(94, 59, 238, 0.12);
+  --shadow-md: 0 12px 30px color-mix(in srgb, var(--primary) 12%, transparent);
   --radius: 16px;
   --ease: 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
@@ -835,7 +835,7 @@ body { color: var(--ink); background: #fff; }
   display: flex; justify-content: center; align-items: center;
   min-height: 58vh; text-align: center;
   padding: 56px 24px;
-  background: radial-gradient(60% 60% at 50% 0%, rgba(94, 59, 238, 0.08), transparent 70%), var(--bg-shade);
+  background: radial-gradient(60% 60% at 50% 0%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 70%), var(--bg-shade);
 }
 .hero--centered { max-width: 780px; }
 .hero--section--title {
@@ -869,7 +869,7 @@ body { color: var(--ink); background: #fff; }
 .skills--section--icon {
   width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center;
   justify-content: center; font-size: 1.45rem; margin-bottom: 12px;
-  background: rgba(94, 59, 238, 0.08);
+  background: color-mix(in srgb, var(--primary) 8%, transparent);
 }
 .skills--section--title { font-size: 1.15rem; margin-bottom: 8px; color: var(--ink); }
 .skills--section--description { color: var(--muted); line-height: 1.65; font-size: 0.95rem; }
@@ -887,7 +887,7 @@ body { color: var(--ink); background: #fff; }
 .timeline--item { position: relative; padding-left: 40px; margin-bottom: 16px; }
 .timeline--marker {
   position: absolute; left: 0; top: 8px; width: 16px; height: 16px; border-radius: 50%;
-  background: var(--gradient); box-shadow: 0 0 0 4px rgba(94, 59, 238, 0.15);
+  background: var(--gradient); box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 15%, transparent);
 }
 .timeline--card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
@@ -903,7 +903,7 @@ body { color: var(--ink); background: #fff; }
 .timeline--highlights li { margin-bottom: 6px; }
 .certs--row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
 .cert--badge {
-  background: rgba(94, 59, 238, 0.07); color: var(--ink); border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--primary) 7%, transparent); color: var(--ink); border: 1px solid var(--line);
   border-radius: 999px; padding: 9px 16px; font-size: 0.85rem; font-weight: 500;
 }
 
@@ -940,7 +940,7 @@ body { color: var(--ink); background: #fff; }
 .portfolio--section--title { font-size: 1.25rem; color: var(--ink); margin-bottom: 10px; }
 .portfolio--card--desc { color: var(--muted); line-height: 1.6; font-size: 0.95rem; }
 .portfolio--tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 14px; }
-.portfolio--tag { font-size: 0.75rem; font-weight: 600; color: var(--primary); background: rgba(94, 59, 238, 0.08); border-radius: 6px; padding: 4px 10px; }
+.portfolio--tag { font-size: 0.75rem; font-weight: 600; color: var(--primary); background: color-mix(in srgb, var(--primary) 8%, transparent); border-radius: 6px; padding: 4px 10px; }
 .portfolio--card--links { display: flex; gap: 18px; }
 .portfolio--link { color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem; }
 .portfolio--link:hover { text-decoration: underline; }
@@ -959,7 +959,7 @@ body { color: var(--ink); background: #fff; }
   display: flex; align-items: center; justify-content: center;
   transition: transform var(--ease), border-color var(--ease), background var(--ease);
 }
-.game--cell:not(:disabled):hover { transform: translateY(-3px); border-color: var(--primary); background: rgba(94, 59, 238, 0.05); }
+.game--cell:not(:disabled):hover { transform: translateY(-3px); border-color: var(--primary); background: color-mix(in srgb, var(--primary) 5%, transparent); }
 .game--cell.is-x { color: var(--primary); }
 .game--cell.is-o { color: #e0397a; }
 .game--cell:disabled { cursor: default; }
@@ -982,3 +982,66 @@ body { color: var(--ink); background: #fff; }
 }
 
 /* Logo Ends here */
+/* =========================================================================
+   THEME ENGINE — multiple selectable palettes via [data-theme] on <html>.
+   Default (no attribute) = Dark. Every surface below reads from variables so
+   switching themes recolors the whole single-page site instantly.
+   ========================================================================= */
+:root, :root[data-theme="dark"] {
+  --bg: #0e1220; --bg-shade: #141a2b; --card: #171e30;
+  --ink: #e8ecf7; --muted: #9aa4bd; --line: rgba(255,255,255,0.09);
+  --primary: #8b93ff; --primary-2: #c084fc;
+  --gradient: linear-gradient(135deg, #8b93ff, #c084fc);
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.30);
+  --shadow-md: 0 16px 40px rgba(0,0,0,0.45);
+}
+:root[data-theme="light"] {
+  --bg: #ffffff; --bg-shade: #f5f6fb; --card: #ffffff;
+  --ink: #17192b; --muted: #5b6178; --line: #e7e8f1;
+  --primary: #4f46e5; --primary-2: #7c3aed;
+  --gradient: linear-gradient(135deg, #4f46e5, #9333ea);
+  --shadow-sm: 0 2px 10px rgba(28,30,83,0.06);
+  --shadow-md: 0 14px 34px rgba(79,70,229,0.14);
+}
+:root[data-theme="midnight"] {
+  --bg: #081426; --bg-shade: #0c1c34; --card: #0f2340;
+  --ink: #e6eefb; --muted: #93a6c4; --line: rgba(255,255,255,0.08);
+  --primary: #38bdf8; --primary-2: #6366f1;
+  --gradient: linear-gradient(135deg, #38bdf8, #6366f1);
+  --shadow-sm: 0 2px 12px rgba(0,0,0,0.35);
+  --shadow-md: 0 16px 40px rgba(0,0,0,0.5);
+}
+:root[data-theme="emerald"] {
+  --bg: #f6faf8; --bg-shade: #eef6f1; --card: #ffffff;
+  --ink: #10241b; --muted: #4b6155; --line: #dcebe3;
+  --primary: #059669; --primary-2: #14b8a6;
+  --gradient: linear-gradient(135deg, #059669, #14b8a6);
+  --shadow-sm: 0 2px 10px rgba(6,95,70,0.07);
+  --shadow-md: 0 14px 34px rgba(6,150,105,0.16);
+}
+
+html, body { background: var(--bg); color: var(--ink); transition: background 0.3s ease, color 0.3s ease; }
+
+/* Retheme the older (non-rewritten) surfaces so all themes look cohesive */
+.contact--section { gap: 26px; }
+.contact--section h2 { color: var(--ink); }
+.contact--input { background: var(--card); color: var(--ink); border: 1px solid var(--line); }
+.contact--input::placeholder { color: var(--muted); }
+.contact--input:focus { border-color: var(--primary); outline: none; }
+.contact--label .text-md { color: var(--muted); }
+.footer--container { background: var(--bg-shade); border-top: 1px solid var(--line); }
+.footer--content, .footer--items a, .footer--social--icon a { color: var(--ink) !important; }
+.footer--social--icon svg path { fill: var(--ink); }
+.divider { border-color: var(--line); }
+.text-md, .text-lg, .text-sm { color: var(--muted); }
+
+/* Theme switcher (in navbar) */
+.theme--switcher { display: inline-flex; gap: 8px; align-items: center; margin-right: 6px; }
+.theme--dot {
+  width: 18px; height: 18px; border-radius: 50%; cursor: pointer; padding: 0;
+  border: 2px solid transparent; transition: transform 0.2s ease, border-color 0.2s ease;
+}
+.theme--dot:hover { transform: scale(1.15); }
+.theme--dot.active { border-color: var(--ink); }
+.navbar--right { display: inline-flex; align-items: center; gap: 14px; }
+@media (max-width: 500px) { .theme--switcher { gap: 6px; } .theme--dot { width: 15px; height: 15px; } }

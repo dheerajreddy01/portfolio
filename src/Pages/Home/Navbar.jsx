@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-scroll";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 function Navbar() {
   const [navActive, setNavActive] = useState(false);
@@ -151,18 +152,21 @@ function Navbar() {
           </li>
         </ul>
       </div>
-      <Link
-        onClick={closeMenu}
-        activeClass="navbar--active-content"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        to="Contact"
-        className="btn btn-outline-primary"
-      >
-        Contact Me
-      </Link>
+      <div className="navbar--right">
+        <ThemeSwitcher />
+        <Link
+          onClick={closeMenu}
+          activeClass="navbar--active-content"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+          to="Contact"
+          className="btn btn-outline-primary"
+        >
+          Contact Me
+        </Link>
+      </div>
     </nav>
   );
 }
