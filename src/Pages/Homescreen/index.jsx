@@ -2,6 +2,7 @@ import AboutMe from "../Home/AboutMe";
 import ContactMe from "../Home/ContactMe";
 import Experience from "../Home/Experience";
 import Footer from "../Home/Footer";
+import Game from "../Home/Game";
 import HeroSection from "../Home/HeroSection";
 import MyPortfolio from "../Home/MyPortfolio";
 import MySkills from "../Home/MySkills";
@@ -16,6 +17,7 @@ export default function Home() {
       <Experience />
       <MyPortfolio />
       <Skills />
+      <Game />
       <ContactMe />
       <Footer />
     </>

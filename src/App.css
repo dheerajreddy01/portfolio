@@ -789,10 +789,11 @@ body { color: var(--ink); background: #fff; }
 .experience--section,
 .portfolio--section,
 .techstack--section,
+.game--section,
 .contact--section {
-  max-width: 1120px;
+  max-width: 1080px;
   margin: 0 auto;
-  padding: 84px 24px;
+  padding: 52px 24px;
 }
 .section--title,
 .sub--title {
@@ -807,10 +808,11 @@ body { color: var(--ink); background: #fff; }
 .sections--heading,
 .section--heading,
 .skills-section--heading {
-  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-size: clamp(1.5rem, 3vw, 2rem);
   color: var(--ink);
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
+.section--title, .sub--title { margin-bottom: 6px; }
 
 /* Navbar */
 .navbar {
@@ -831,22 +833,22 @@ body { color: var(--ink); background: #fff; }
 /* Hero */
 .hero--section {
   display: flex; justify-content: center; align-items: center;
-  min-height: 82vh; text-align: center;
-  padding: 40px 24px;
+  min-height: 58vh; text-align: center;
+  padding: 56px 24px;
   background: radial-gradient(60% 60% at 50% 0%, rgba(94, 59, 238, 0.08), transparent 70%), var(--bg-shade);
 }
-.hero--centered { max-width: 820px; }
+.hero--centered { max-width: 780px; }
 .hero--section--title {
-  font-size: clamp(2.6rem, 8vw, 5rem); font-weight: 800; line-height: 1.05;
-  letter-spacing: -1px; margin: 10px 0 18px;
+  font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 800; line-height: 1.08;
+  letter-spacing: -1px; margin: 8px 0 14px;
 }
 .hero--section-title--color {
   background: var(--gradient); -webkit-background-clip: text;
   background-clip: text; -webkit-text-fill-color: transparent;
 }
 .hero--section-description {
-  font-size: clamp(1rem, 2.2vw, 1.18rem); color: var(--muted);
-  line-height: 1.7; max-width: 680px; margin: 0 auto 28px;
+  font-size: clamp(0.98rem, 2vw, 1.1rem); color: var(--muted);
+  line-height: 1.65; max-width: 660px; margin: 0 auto 22px;
 }
 .hero--cta--row { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
 .btn-primary { background: var(--gradient); border: none; box-shadow: var(--shadow-md); }
@@ -855,18 +857,18 @@ body { color: var(--ink); background: #fff; }
 
 /* Expertise cards */
 .skills--section--container {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 22px; margin-top: 40px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px; margin-top: 26px;
 }
 .skills--section--card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 28px 24px; box-shadow: var(--shadow-sm); transition: transform var(--ease), box-shadow var(--ease);
+  padding: 20px; box-shadow: var(--shadow-sm); transition: transform var(--ease), box-shadow var(--ease);
   min-height: auto;
 }
-.skills--section--card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); border-color: transparent; }
+.skills--section--card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
 .skills--section--icon {
-  width: 56px; height: 56px; border-radius: 14px; display: flex; align-items: center;
-  justify-content: center; font-size: 1.7rem; margin-bottom: 16px;
+  width: 46px; height: 46px; border-radius: 12px; display: flex; align-items: center;
+  justify-content: center; font-size: 1.45rem; margin-bottom: 12px;
   background: rgba(94, 59, 238, 0.08);
 }
 .skills--section--title { font-size: 1.15rem; margin-bottom: 8px; color: var(--ink); }
@@ -878,11 +880,11 @@ body { color: var(--ink); background: #fff; }
 .about--section--single .hero--section-description { text-align: left; margin-bottom: 18px; }
 
 /* Experience timeline */
-.timeline { max-width: 820px; margin: 44px auto 0; position: relative; }
+.timeline { max-width: 820px; margin: 26px auto 0; position: relative; }
 .timeline::before {
   content: ""; position: absolute; left: 7px; top: 6px; bottom: 6px; width: 2px; background: var(--line);
 }
-.timeline--item { position: relative; padding-left: 40px; margin-bottom: 26px; }
+.timeline--item { position: relative; padding-left: 40px; margin-bottom: 16px; }
 .timeline--marker {
   position: absolute; left: 0; top: 8px; width: 16px; height: 16px; border-radius: 50%;
   background: var(--gradient); box-shadow: 0 0 0 4px rgba(94, 59, 238, 0.15);
@@ -899,7 +901,7 @@ body { color: var(--ink); background: #fff; }
 .timeline--location { color: var(--muted); font-size: 0.85rem; margin: 2px 0 12px; }
 .timeline--highlights { margin: 0; padding-left: 18px; color: var(--muted); line-height: 1.6; }
 .timeline--highlights li { margin-bottom: 6px; }
-.certs--row { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 34px; }
+.certs--row { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 22px; }
 .cert--badge {
   background: rgba(94, 59, 238, 0.07); color: var(--ink); border: 1px solid var(--line);
   border-radius: 999px; padding: 9px 16px; font-size: 0.85rem; font-weight: 500;
@@ -907,7 +909,7 @@ body { color: var(--ink); background: #fff; }
 
 /* Tech stack badges */
 .techstack--section { text-align: center; }
-.techstack--badges { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 36px; }
+.techstack--badges { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 24px; }
 .techstack--badge {
   background: var(--card); border: 1px solid var(--line); border-radius: 999px;
   padding: 10px 18px; font-weight: 600; font-size: 0.9rem; color: var(--ink);
@@ -923,13 +925,13 @@ body { color: var(--ink); background: #fff; }
 }
 .btn-github:hover { color: var(--primary); border-color: var(--primary); }
 .portfolio--section--container {
-  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 22px; margin-top: 40px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 16px; margin-top: 26px;
 }
 .portfolio--section--card {
-  display: flex; flex-direction: column; justify-content: space-between; gap: 18px;
+  display: flex; flex-direction: column; justify-content: space-between; gap: 14px;
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
-  padding: 26px 24px; box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
+  padding: 22px 20px; box-shadow: var(--shadow-sm); position: relative; overflow: hidden;
   transition: transform var(--ease), box-shadow var(--ease);
 }
 .portfolio--section--card::before { content: ""; position: absolute; inset: 0 0 auto 0; height: 4px; background: var(--gradient); opacity: 0; transition: opacity var(--ease); }
@@ -943,6 +945,29 @@ body { color: var(--ink); background: #fff; }
 .portfolio--link { color: var(--primary); font-weight: 700; text-decoration: none; font-size: 0.9rem; }
 .portfolio--link:hover { text-decoration: underline; }
 
+/* Mini-game: Tic-Tac-Toe */
+.game--section { text-align: center; }
+.game--subtitle { color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.game--wrap { display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 26px; }
+.game--status { font-weight: 700; color: var(--ink); min-height: 24px; }
+.game--board {
+  display: grid; grid-template-columns: repeat(3, 84px); grid-template-rows: repeat(3, 84px); gap: 10px;
+}
+.game--cell {
+  font-size: 2.2rem; font-weight: 800; border-radius: 12px; cursor: pointer;
+  background: var(--card); border: 1px solid var(--line); box-shadow: var(--shadow-sm);
+  display: flex; align-items: center; justify-content: center;
+  transition: transform var(--ease), border-color var(--ease), background var(--ease);
+}
+.game--cell:not(:disabled):hover { transform: translateY(-3px); border-color: var(--primary); background: rgba(94, 59, 238, 0.05); }
+.game--cell.is-x { color: var(--primary); }
+.game--cell.is-o { color: #e0397a; }
+.game--cell:disabled { cursor: default; }
+.game--reset { padding: 10px 22px; }
+@media (max-width: 420px) {
+  .game--board { grid-template-columns: repeat(3, 72px); grid-template-rows: repeat(3, 72px); }
+}
+
 /* Motion-safety */
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; scroll-behavior: auto !important; }
@@ -951,7 +976,7 @@ body { color: var(--ink); background: #fff; }
 /* Responsive */
 @media (max-width: 640px) {
   .skills--section, .about--section--single, .experience--section,
-  .portfolio--section, .techstack--section, .contact--section { padding: 60px 20px; }
+  .portfolio--section, .techstack--section, .contact--section, .game--section { padding: 40px 20px; }
   .portfolio--container-box { flex-direction: column; align-items: flex-start; }
   .timeline--head { flex-direction: column; }
 }

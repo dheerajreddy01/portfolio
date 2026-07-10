@@ -127,6 +127,20 @@ function Navbar() {
             </Link>
           </li>
           <li>
+            <Link
+              onClick={closeMenu}
+              activeClass="navbar--active-content"
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+              to="Game"
+              className="navbar--content"
+            >
+              Play
+            </Link>
+          </li>
+          <li>
             <a
             href="./Dheerajreddy.pdf"
               download="Dheeraj_Reddy_Resume.pdf"
