@@ -255,7 +255,7 @@ h2 {
 .skills--section--container {
   display: grid;
   justify-content: center;
-  align-items: flex-start;
+  align-items: start;
   gap: 42.6px;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -1253,3 +1253,8 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
     padding: 24px 18px;
   }
 }
+
+/* Grid stretch fix: align-items:flex-start is invalid on a grid container (grid
+   wants "start"), so it was silently ignored and fell back to default "stretch",
+   forcing every My Expertise card to match the tallest card in its row. */
+.skills--section--container, .portfolio--section--container { align-items: start; }
