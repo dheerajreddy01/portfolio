@@ -1202,3 +1202,16 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 
 /* Footer: remove the dashboard nav links (keep social + name only) */
 .footer--items { display: none; }
+
+/* Fix nav link text color per theme (was blending into the bar) */
+.navbar--content { color: var(--ink); }
+.navbar--content:hover, .navbar--active-content { color: var(--primary); }
+
+/* Single-row combined footer */
+.footer--container { padding: 20px 24px !important; }
+.footer--bar { display: flex; align-items: center; justify-content: space-between; gap: 12px 20px; flex-wrap: wrap; max-width: 1080px; margin: 0 auto; width: 100%; }
+.footer--content { color: var(--muted) !important; font-size: 0.84rem !important; margin: 0; }
+.footer--social { display: flex; gap: 18px; flex-wrap: wrap; }
+.footer--social a { color: var(--muted); text-decoration: none; font-size: 0.84rem; transition: color 0.2s ease; }
+.footer--social a:hover { color: var(--primary); }
+@media (max-width: 480px) { .footer--bar { justify-content: center; text-align: center; } }
