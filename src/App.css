@@ -1166,3 +1166,39 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 .divider { margin: 16px 0 12px !important; }
 .footer--content--container { flex-wrap: wrap; gap: 8px; justify-content: center; }
 .footer--content--container .footer--social--icon { display: none; } /* drop dead Privacy/Terms/Cookies links */
+
+/* =========================================================================
+   Fix navbar theme bug + smaller components + slimmer footer
+   ========================================================================= */
+/* Navbar background was hardcoded white — make it a translucent tint of the theme bg */
+.navbar { background: color-mix(in srgb, var(--bg) 82%, transparent) !important; }
+
+/* Smaller components across the board */
+.skills--section--heading, .sections--heading, .section--heading, .skills-section--heading {
+  font-size: clamp(1.35rem, 2.6vw, 1.75rem);
+}
+.hero--section--title { font-size: clamp(1.9rem, 5vw, 2.8rem); }
+.hero--section-description { font-size: 0.96rem; line-height: 1.6; }
+.hero--stat { padding: 8px 14px; min-width: 96px; }
+.hero--stat--value { font-size: 0.95rem; }
+.skills--section--card { padding: 16px; }
+.skills--section--icon { width: 40px; height: 40px; font-size: 1.25rem; margin-bottom: 10px; }
+.skills--section--title { font-size: 1.02rem; }
+.skills--section--description { font-size: 0.86rem; line-height: 1.55; }
+.portfolio--section--card { padding: 18px 16px; gap: 12px; }
+.portfolio--section--title { font-size: 1.08rem; }
+.portfolio--card--desc { font-size: 0.86rem; }
+.portfolio--tag { font-size: 0.7rem; padding: 3px 8px; }
+.timeline--card { padding: 15px 18px; }
+.timeline--role { font-size: 1.02rem; }
+.timeline--highlights { font-size: 0.88rem; }
+.techstack--badge { padding: 8px 14px; font-size: 0.82rem; }
+.cert--badge { padding: 7px 13px; font-size: 0.8rem; }
+.game--board.ttt--board { grid-template-columns: repeat(3, 72px); grid-template-rows: repeat(3, 72px); }
+.game--cell { font-size: 1.9rem; }
+.g2048--board { grid-template-columns: repeat(4, 68px); grid-template-rows: repeat(4, 68px); }
+.g2048--top { width: 304px; }
+.game--stage { min-height: 300px; }
+
+/* Footer: remove the dashboard nav links (keep social + name only) */
+.footer--items { display: none; }
