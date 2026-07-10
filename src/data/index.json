@@ -56,7 +56,8 @@
       "id": "3",
       "title": "CKart",
       "description": "An e-commerce platform for construction supplies with district-based dynamic pricing and containerized microservices.",
-      "tags": ["Django", "Next.js", "PostgreSQL", "Docker", "Kubernetes"]
+      "tags": ["Django", "Next.js", "PostgreSQL", "Docker", "Kubernetes"],
+      "live": "https://ckart.co.in/"
     },
     {
       "id": "4",
