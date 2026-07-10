@@ -1220,3 +1220,12 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 .reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
 .reveal.in-view { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1 !important; transform: none !important; } }
+
+/* 3 cards per row on desktop (kills wasted space in My Expertise / Projects) */
+.skills--section--container, .portfolio--section--container { grid-template-columns: repeat(3, 1fr); gap: 14px; }
+@media (max-width: 900px) {
+  .skills--section--container, .portfolio--section--container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 640px) {
+  .skills--section--container, .portfolio--section--container { grid-template-columns: 1fr; }
+}
