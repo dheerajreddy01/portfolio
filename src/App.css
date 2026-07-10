@@ -1258,3 +1258,12 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
    wants "start"), so it was silently ignored and fell back to default "stretch",
    forcing every My Expertise card to match the tallest card in its row. */
 .skills--section--container, .portfolio--section--container { align-items: start; }
+
+/* Fix legacy internal flex "gap" between each section's title-block and its
+   content — .skills--section (106.667px!) and .portfolio--section (80px) never
+   had this property overridden, only padding, so a massive gap remained between
+   "My Expertise"/"My Portfolio" headings and their card grids. */
+.skills--section, .portfolio--section, .experience--section,
+.techstack--section, .game--section {
+  gap: 0;
+}
