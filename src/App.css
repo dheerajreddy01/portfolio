@@ -1267,3 +1267,18 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 .techstack--section, .game--section {
   gap: 0;
 }
+
+/* =========================================================================
+   LINE-HEIGHT AUDIT FIX — every earlier density pass overrode font-size but
+   never line-height, so legacy fixed line-heights from the original template
+   (45px-90px) kept adding large invisible padding above/below now-small text.
+   Forcing relative line-heights here (after all @media blocks, so it wins at
+   every breakpoint) closes that out for every heading/title class in use.
+   ========================================================================= */
+.skills--section--heading, .sections--heading, .section--heading, .skills-section--heading {
+  line-height: 1.15;
+}
+.skills--section--title { line-height: 1.3; }
+.portfolio--section--title { line-height: 1.3; }
+.section--title, .sub--title { line-height: 1.4; }
+.hero--section--title { line-height: 1.08; }
