@@ -1045,3 +1045,8 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 .theme--dot.active { border-color: var(--ink); }
 .navbar--right { display: inline-flex; align-items: center; gap: 14px; }
 @media (max-width: 500px) { .theme--switcher { gap: 6px; } .theme--dot { width: 15px; height: 15px; } }
+/* Compact navbar CTAs — résumé stays prominent for skimming recruiters */
+.navbar--right .btn { padding: 9px 18px; font-size: 14px; }
+.navbar--resume { white-space: nowrap; }
+@media (max-width: 640px) { .navbar--contact-btn { display: none; } }
+@media (max-width: 380px) { .navbar--right .btn { padding: 8px 12px; } }

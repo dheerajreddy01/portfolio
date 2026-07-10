@@ -154,6 +154,13 @@ function Navbar() {
       </div>
       <div className="navbar--right">
         <ThemeSwitcher />
+        <a
+          href="./Dheerajreddy.pdf"
+          download="Dheeraj_Reddy_Resume.pdf"
+          className="btn btn-primary navbar--resume"
+        >
+          ⬇ Résumé
+        </a>
         <Link
           onClick={closeMenu}
           activeClass="navbar--active-content"
@@ -162,9 +169,9 @@ function Navbar() {
           offset={-70}
           duration={500}
           to="Contact"
-          className="btn btn-outline-primary"
+          className="btn btn-outline-primary navbar--contact-btn"
         >
-          Contact Me
+          Contact
         </Link>
       </div>
     </nav>
