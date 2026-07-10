@@ -1100,3 +1100,58 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
   .g2048--board { grid-template-columns: repeat(4, 62px); grid-template-rows: repeat(4, 62px); }
   .g2048--top { width: 272px; }
 }
+
+/* =========================================================================
+   DENSITY + MOBILE PASS — tighter spacing, fixed mobile menu, clean on phones.
+   ========================================================================= */
+.skills--section, .about--section--single, .experience--section,
+.portfolio--section, .techstack--section, .game--section, .contact--section {
+  padding: 44px 24px;
+}
+.hero--section { min-height: 50vh; padding: 44px 24px; }
+.game--stage { min-height: 340px; }
+
+/* Fix the mobile nav dropdown (was hardcoded white + hidden behind content) */
+@media (max-width: 1200px) {
+  .navbar { position: sticky; gap: 8px; }
+  .navbar--items {
+    background: var(--bg) !important;
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
+    z-index: 95 !important;
+  }
+  .navbar--items ul { z-index: auto; padding: 1.4rem 0 1.6rem; }
+  .navbar--items ul li a { color: var(--ink); }
+  .navbar--items.active { top: 100%; z-index: 95; }
+  .navbar--right { order: 2; margin-left: auto; }
+  .nav__hamburger { order: 3; margin-left: 8px; color: var(--ink); }
+  .nav__hamburger__line { background: var(--ink); }
+  .navbar--contact-btn { display: none; }
+}
+
+/* Phone tuning */
+@media (max-width: 640px) {
+  .skills--section, .about--section--single, .experience--section,
+  .portfolio--section, .techstack--section, .game--section, .contact--section {
+    padding: 32px 18px;
+  }
+  .hero--section { min-height: auto; padding: 40px 18px 44px; }
+  .hero--section--title { font-size: clamp(2rem, 11vw, 2.6rem); }
+  .hero--stats { gap: 8px; }
+  .hero--stat { min-width: 0; flex: 1 1 40%; padding: 9px 10px; }
+  .hero--cta--row .btn { flex: 1 1 auto; }
+  .skills--section--container, .portfolio--section--container { grid-template-columns: 1fr; gap: 12px; }
+  .timeline--item { padding-left: 30px; }
+  .game--stage { min-height: 300px; }
+  .g2048--board { grid-template-columns: repeat(4, 1fr); grid-template-rows: repeat(4, 68px); width: min(300px, 86vw); }
+  .g2048--top { width: min(300px, 86vw); }
+  .contact--form--container { width: 100%; }
+  .container { grid-template-columns: 1fr; }
+}
+
+/* Extra-small phones */
+@media (max-width: 380px) {
+  .navbar--resume { font-size: 0; padding: 8px 12px; }
+  .navbar--resume::before { content: "⬇"; font-size: 15px; }
+  .theme--dot { width: 14px; height: 14px; }
+}
