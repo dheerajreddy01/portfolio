@@ -1155,3 +1155,14 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
   .navbar--resume::before { content: "⬇"; font-size: 15px; }
   .theme--dot { width: 14px; height: 14px; }
 }
+
+/* Compact footer */
+.footer--container { padding: 26px 24px !important; }
+.footer--link--container { flex-wrap: wrap; gap: 14px; justify-content: center; }
+.footer--items > ul { gap: 20px !important; flex-wrap: wrap; justify-content: center; }
+.footer--items ul > li > a, .footer--content { font-size: 0.85rem !important; line-height: 1.4 !important; }
+.footer--social--icon > ul { gap: 12px !important; }
+.footer--social--icon svg { width: 20px !important; height: 20px !important; }
+.divider { margin: 16px 0 12px !important; }
+.footer--content--container { flex-wrap: wrap; gap: 8px; justify-content: center; }
+.footer--content--container .footer--social--icon { display: none; } /* drop dead Privacy/Terms/Cookies links */
