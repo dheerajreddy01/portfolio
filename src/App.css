@@ -1229,3 +1229,27 @@ html, body { background: var(--bg); color: var(--ink); transition: background 0.
 @media (max-width: 640px) {
   .skills--section--container, .portfolio--section--container { grid-template-columns: 1fr; }
 }
+
+/* =========================================================================
+   FINAL DENSITY PASS — kill legacy min-height/gap leftovers from the original
+   template and tighten section rhythm site-wide (this screenshot: too much
+   vertical space between Portfolio → Tech Stack → Expertise).
+   ========================================================================= */
+.skills--section--card { min-height: auto; gap: 10px; }
+.portfolio--container { gap: 6px; }
+.skills--section, .about--section--single, .experience--section,
+.portfolio--section, .techstack--section, .game--section, .contact--section {
+  padding: 36px 24px;
+}
+.techstack--badges { margin-top: 16px; }
+.skills--section--container { margin-top: 18px; }
+.portfolio--section--container { margin-top: 18px; }
+.timeline { margin-top: 18px; }
+.certs--row { margin-top: 16px; }
+
+@media (max-width: 640px) {
+  .skills--section, .about--section--single, .experience--section,
+  .portfolio--section, .techstack--section, .game--section, .contact--section {
+    padding: 24px 18px;
+  }
+}
