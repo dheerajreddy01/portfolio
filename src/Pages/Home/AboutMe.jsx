@@ -1,25 +1,24 @@
 export default function AboutMe() {
-    return (
-      <section id="AboutMe" className="about--section">
-        <div className="about--section--img">
-          <img src="./img/about-me.png" alt="About Me" />
+  return (
+    <section id="AboutMe" className="about--section about--section--single">
+      <div className="hero--section--content--box about--section--box">
+        <div className="hero--section--content">
+          <p className="section--title">Get To Know More</p>
+          <h1 className="skills-section--heading">About Me</h1>
+          <p className="hero--section-description">
+            I'm a Full-Stack Software Engineer with a Master's in Computer Science from the University
+            of Central Missouri and 4+ years of experience across fintech and e-commerce. Today at
+            Capital One I build backend services and REST APIs in Go, working across tenancy &amp; data
+            and account-management APIs on AWS, while remediating security vulnerabilities.
+          </p>
+          <p className="hero--section-description">
+            My toolkit spans Go, Java, Python and React, with AWS, Docker/Kubernetes and PostgreSQL.
+            I hold AWS Developer &amp; Cloud Practitioner certifications and a patent (Monstograin). I
+            enjoy solving complex problems in collaborative, fast-moving teams and shipping clean,
+            reliable software.
+          </p>
         </div>
-        <div className="hero--section--content--box about--section--box">
-          <div className="hero--section--content">
-            <h1 className="skills-section--heading">About Me</h1>
-            <p className="hero--section-description">
-                Driven by a passion for technology and innovation, I am a Software Developer with a Master's in 
-                Computer Science from the University of Central Missouri, holding expertise in front-end and back-end 
-                development, database optimization, and cloud technologies. My professional journey includes impactful roles at Rakuten India and NCR Corporation, 
-                where I delivered significant improvements in application responsiveness, database efficiency, and user engagement. I have a proven track record of 
-                employing React, Python, and SQL to enhance user experiences and streamline operations.
-            </p>
-            <p className="hero--section-description">
-                I thrive in collaborative environments that challenge me to solve complex problems 
-                and am always eager to apply my skills and creativity to contribute to the success of dynamic teams and innovative projects.
-            </p>
-          </div>
-        </div>
-      </section>
-    );
-  }
+      </div>
+    </section>
+  );
+}

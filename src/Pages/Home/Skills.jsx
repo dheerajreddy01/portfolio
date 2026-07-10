@@ -2,18 +2,18 @@ import data from "../../data/index.json";
 
 export default function Skills() {
   return (
-    <section className="Experience--section" id="Skills">
+    <section className="techstack--section" id="Skills">
       <div className="portfolio--container-box">
         <div className="portfolio--container">
-          <h2 className="sections--heading">Experience</h2>
-          <p className="sub--title">Here are the technologies I've worked with.</p>
+          <p className="sub--title">Tech Stack</p>
+          <h2 className="sections--heading">Technologies I Work With</h2>
         </div>
       </div>
-      <div className="Experience--section--container">
-        {data?.Experience?.map((item, index) => (
-          <div key={index} className="Experience-section--card--content">
-            <img src={item.src} alt="Avatar" className="experience-image" />
-          </div>
+      <div className="techstack--badges">
+        {data?.techStack?.map((tech, index) => (
+          <span key={index} className="techstack--badge">
+            {tech}
+          </span>
         ))}
       </div>
     </section>

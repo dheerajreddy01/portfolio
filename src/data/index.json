@@ -1,142 +1,125 @@
 {
-    "skills": [
-      {
-        "id": "1",
-        "src": "./img/product-chain-1.png",
-        "title": "Front-End",
-        "description": "Skilled in creating intuitive and responsive user interfaces to enhance user engagement and experience."
-      },
-      {
-        "id": "2",
-        "src": "./img/tag-1.png",
-        "title": "Back-End",
-        "description": "Capable of designing and implementing RESTful APIs, securing applications, and ensuring high performance and reliability in Java & Python based environments"
-      },
-      {
-        "id": "3",
-        "src": "./img/feather-pen-2.png",
-        "title": "AWS Cloud Solutions",
-        "description": "Experienced in deploying and managing applications on AWS cloud infrastructure for scalability, reliability, and security"
-      },
-      {
-        "id": "4",
-        "src": "./img/feather-pen-1.png",
-        "title": "Database Management",
-        "description": "Skilled in working with relational databases like PostgreSQL and ORM tools like SQL Alchemy, as well as MongoDB for NoSQL database management"
-      },
-      {
-        "id": "5",
-        "src": "./img/feather-pen-1.png",
-        "title": "Machine Learning Integration",
-        "description": "Experience in integrating machine learning algorithms for applications,showcasing proficiency in cutting-edge technologies to solve real-world problems"
-      },
-      {
-        "id": "6",
-        "src": "./img/feather-pen-1.png",
-        "title": "Agile Methodologies",
-        "description": "Engaged in Agile development methodologies, contributing to improved project delivery times through effective teamwork and steady project progress"
-      },
-      {
-        "id": "7",
-        "src": "./img/feather-pen-1.png",
-        "title": "Version Control and Deployment",
-        "description": "Proficient in Git for version control and Docker for containerization, ensuring efficient collaboration and deployment processes"
-      }
-
-
-    ],
-    "portfolio": [
-      {
-        "id": "1",
-        "src": "./img/test1.png",
-        "title": "Rakuten Ticket Reseravation",
-        "description": "I contributed to the theatre segment of Rakuten Ticket, developing features for booking plays, seat selection, and managing Rakuten points, enhancing user engagement and loyalty.",
-        "link": "View In Github",
-        "linktoportal":"https://github.com/dheerajreddy01/Ticket"
-      },
-      {
-        "id": "2",
-        "src": "./img/test.png",
-        "title": "Monstograin",
-        "description": "Monitoring the Storage of food grains in warehouses continuously using IoT devices by considering the parameters of temperature, carbon dioxide, and humidity to detect and prevent spoilage of food grains in advance including the study of behavior using machine learning for accurate predictions.",
-        "link": "View In Github",
-        "linktoportal":"https://github.com/Monstograin" 
-       
-      },
-      {
-        "id": "3",
-        "src": "./img/test3.png",
-        "title": "Chat Application",
-        "description": "A React-based chat application enables real-time text messaging between users. It features direct and group messaging, with support for emojis and file sharing. Built with React, it offers a responsive, interactive user experience across devices.",
-        "link": "View In Github",
-        "linktoportal": "https://github.com/dheerajreddy01/chatApp"
-      }
-    ],
-    "Experience": [
-      {
-        "id": "1",
-        "src": "./img/html.png"
-      },
-      {
-        "id": "2",
-        "src": "./img/javascript.png"
-      },
-      {
-        "id": "3",
-        "src": "./img/react.png"
-      },
-      {
-        "id": "4",
-        "src": "./img/node.png"
-      },
-      {
-        "id": "5",
-        "src": "./img/nextjs.png"
-      },
-      {
-        "id": "6",
-        "src": "./img/CSS.png"
-      },
-      {
-        "id": "7",
-        "src": "./img/Python.png"
-      },
-      {
-        "id": "8",
-        "src": "./img/java.png"
-      },
-      {
-        "id": "9",
-        "src": "./img/MySQL.png"
-      },
-      {
-        "id": "10",
-        "src": "./img/Mongodb.png"
-      },
-      {
-        "id": "11",
-        "src": "./img/AWS.png"
-      },
-      {
-        "id": "12",
-        "src": "./img/Bootstrap.png"
-      },
-      {
-        "id": "13",
-        "src": "./img/fastapi.png"
-      },
-      {
-        "id": "14",
-        "src": "./img/Redux.png"
-      },
-      {
-        "id": "15",
-        "src": "./img/git.png"
-      },
-      {
-        "id": "16",
-        "src": "./img/Springboot.png"
-      }
-
-    ]
-  }
+  "skills": [
+    {
+      "id": "1",
+      "icon": "🎨",
+      "title": "Front-End",
+      "description": "Building responsive, intuitive interfaces with React, Next.js and Redux for a great user experience across devices."
+    },
+    {
+      "id": "2",
+      "icon": "⚙️",
+      "title": "Back-End & APIs",
+      "description": "Designing and shipping scalable REST APIs and services in Go, Java and Python with Spring Boot, Gin and GORM."
+    },
+    {
+      "id": "3",
+      "icon": "☁️",
+      "title": "Cloud & DevOps",
+      "description": "Deploying on AWS (Lambda, Step Functions, S3, RDS, SQS) with Docker, Kubernetes and CI/CD on Jenkins & GitHub Actions."
+    },
+    {
+      "id": "4",
+      "icon": "🗄️",
+      "title": "Databases",
+      "description": "Modeling and optimizing data with PostgreSQL, MySQL and MongoDB, plus analytics on Snowflake."
+    },
+    {
+      "id": "5",
+      "icon": "🔒",
+      "title": "Security & Reliability",
+      "description": "Remediating security vulnerabilities and safeguarding quality with 90%+ test coverage and production support."
+    },
+    {
+      "id": "6",
+      "icon": "🤝",
+      "title": "Agile Delivery",
+      "description": "Collaborating in Agile/Scrum teams with Git and Jira to ship reliably and iterate quickly."
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "1",
+      "title": "TradeSense",
+      "description": "A risk-first algorithmic trading & market-prediction system with backtesting on real and synthetic data.",
+      "tags": ["Python", "Streamlit", "Pandas", "scikit-learn"],
+      "live": "https://tradesense-trading.streamlit.app/"
+    },
+    {
+      "id": "2",
+      "title": "Hirewave",
+      "description": "A job-automation platform that streamlines the job search and application workflow end to end.",
+      "tags": ["JavaScript", "Node.js", "PostgreSQL"],
+      "live": "https://hirewave-wup5.onrender.com/"
+    },
+    {
+      "id": "3",
+      "title": "CKart",
+      "description": "An e-commerce platform for construction supplies with district-based dynamic pricing and containerized microservices.",
+      "tags": ["Django", "Next.js", "PostgreSQL", "Docker", "Kubernetes"]
+    },
+    {
+      "id": "4",
+      "title": "Monstograin  🏅 Patented",
+      "description": "IoT + ML system that monitors grain-storage conditions (temperature, CO₂, humidity) and detects spoilage anomalies. Patent IN 202041049928A.",
+      "tags": ["Python", "Machine Learning", "React", "Node.js", "Chart.js"]
+    },
+    {
+      "id": "5",
+      "title": "Financial Market Data Analysis",
+      "description": "Time-series forecasting and investment-strategy optimization on historical market data with statistical testing and visualization.",
+      "tags": ["Python", "Pandas", "NumPy", "SciPy", "Matplotlib"],
+      "github": "https://github.com/dheerajreddy01/Historical-data-Yahoo"
+    }
+  ],
+  "experience": [
+    {
+      "id": "1",
+      "role": "Software Engineer",
+      "company": "Capital One",
+      "period": "Sep 2024 – Present",
+      "location": "Richmond, VA",
+      "highlights": [
+        "Build Go backend services & REST APIs across tenancy & data, including new APIs for account-information updates.",
+        "Automate AWS data pipelines (S3 → OneStream) with SQS/DLQ, Step Functions and Lambda.",
+        "Maintain CI/CD on Jenkins, monitor with CloudWatch/PagerDuty, and remediate security vulnerabilities.",
+        "Sustain 90%+ SonarQube coverage with Testify unit tests."
+      ]
+    },
+    {
+      "id": "2",
+      "role": "Software Engineer",
+      "company": "Acetech Group",
+      "period": "Jan 2023 – Aug 2024",
+      "location": "Maryland, MD",
+      "highlights": [
+        "Built ReactJS front-ends and Go REST APIs for scalable order management.",
+        "Designed serverless order fulfillment on AWS (Lambda, Step Functions, EC2/S3/RDS).",
+        "Optimized PostgreSQL queries and hardened deployments with IAM and CloudWatch."
+      ]
+    },
+    {
+      "id": "3",
+      "role": "Software Engineer",
+      "company": "Rakuten India",
+      "period": "Dec 2021 – Jul 2022",
+      "location": "Bangalore, India",
+      "highlights": [
+        "Developed responsive React components for a ticketing system.",
+        "Built secure Java/Spring backend services with the team.",
+        "Cut website load times by 40% via SQL/MongoDB optimization."
+      ]
+    }
+  ],
+  "techStack": [
+    "Go", "Java", "Python", "JavaScript", "React", "Next.js", "Redux", "Node.js",
+    "Spring Boot", "Gin", "GORM", "Django", "FastAPI", "REST APIs",
+    "AWS", "Docker", "Kubernetes", "Jenkins", "GitHub Actions",
+    "PostgreSQL", "MySQL", "MongoDB", "Snowflake", "Git", "Jira"
+  ],
+  "certifications": [
+    "AWS Certified Developer – Associate",
+    "AWS Certified Cloud Practitioner",
+    "Patent — Monstograin (IN 202041049928A)"
+  ]
+}
