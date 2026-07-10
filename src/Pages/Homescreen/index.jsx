@@ -12,11 +12,11 @@ export default function Home() {
   return (
     <>
       <HeroSection />
-      <MySkills />
-      <AboutMe />
       <Experience />
       <MyPortfolio />
       <Skills />
+      <MySkills />
+      <AboutMe />
       <Game />
       <ContactMe />
       <Footer />
