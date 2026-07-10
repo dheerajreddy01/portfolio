@@ -8,9 +8,15 @@ export default function ContactMe() {
           Submit the form below to get in touch with me
           </p>
         </div>
-        <form  action="https://getform.io/f/pbmzzxxa" 
-        method="POST"
-        className="contact--form--container">
+        <form
+          action="https://formsubmit.co/reddydheeraj94@gmail.com"
+          method="POST"
+          className="contact--form--container"
+        >
+          <input type="hidden" name="_subject" value="New message from your portfolio" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="text" name="_honey" style={{ display: "none" }} />
           <div className="container">
             <label htmlFor="first-name" className="contact--label">
               <span className="text-md">First Name</span>
