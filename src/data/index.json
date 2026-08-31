@@ -81,22 +81,33 @@
       "period": "Sep 2024 – Present",
       "location": "Richmond, VA",
       "highlights": [
-        "Develop Go backend services and APIs supporting dataset ingestion, egress, and data-quality workflows",
-        "Automate AWS data pipelines (S3 → OneStream) with SQS/DLQ, Step Functions and Lambda.",
-        "Maintain CI/CD on Jenkins, monitor with CloudWatch/PagerDuty, and remediate security vulnerabilities.",
-        "Sustain 90%+ SonarQube coverage with Testify unit tests."
+        "Develop Go backend services and APIs supporting dataset ingestion, egress, and data-quality workflows.",
+        "Build multitenant application capabilities through coordinated changes to Go backend services and React frontend components.",
+        "Develop Kafka stream-processing workflows for datasets and improve data quality across ingestion and egress jobs.",
+        "Build automated tests for backend services, APIs, and data-processing workflows while maintaining 90%+ SonarQube coverage.",
+        "Maintain Amazon Neptune graph data by identifying and deleting stale vertices to improve data quality.",
+        "Implement cloud data and batch workflows using Amazon S3, ECS, EMR, Glue Jobs, AWS Batch, RDS, Secrets Manager, Neptune, and CloudWatch.",
+        "Orchestrate RDS and S3 batch-ingestion workflows and use Go data-streaming logic to transfer data to OneStream.",
+        "Build event-driven processing with AWS Step Functions and Lambda; improve SQS error handling through individual message processing and dead-letter queues.",
+        "Identify and remediate application security vulnerabilities to harden internally developed applications and reduce attack exposure.",
+        "Use Docker for service simulation; maintain Jenkins CI/CD pipelines, analyze CloudWatch logs, monitor PagerDuty alerts, review code, and provide production support."
       ]
     },
     {
       "id": "2",
       "role": "Software Engineer",
       "company": "ADT",
-      "period": "Dec 2023 – Aug 2024",
+      "period": "Dec 2023 – Sep 2024",
       "location": "Remote",
       "highlights": [
-        "Built ReactJS front-ends and Go REST APIs for scalable order management.",
-        "Designed serverless order fulfillment on AWS (Lambda, Step Functions, EC2/S3/RDS).",
-        "Optimized PostgreSQL queries and hardened deployments with IAM and CloudWatch."
+        "Developed and maintained scalable Go backend systems supporting residential home-security applications.",
+        "Implemented serverless backend workflows using AWS Lambda and Step Functions to automate application processing.",
+        "Developed backend data-access logic with PostgreSQL and optimized database operations to improve query performance and application responsiveness.",
+        "Deployed backend workloads using AWS EC2, S3, and RDS to support cloud-based application processing and data storage.",
+        "Applied AWS IAM roles and policies to strengthen access control and support secure resource management.",
+        "Enhanced CI/CD pipelines with GitHub Actions to automate builds and support consistent deployments.",
+        "Used Amazon CloudWatch and SNS for application monitoring, alerting, troubleshooting, and production reliability.",
+        "Collaborated in an Agile Scrum team using Jira for sprint planning, task tracking, and delivery."
       ]
     },
     {
@@ -106,9 +117,10 @@
       "period": "Dec 2021 – Jul 2022",
       "location": "Bangalore, India",
       "highlights": [
-        "Developed responsive React components for a ticketing system.",
-        "Built secure Java/Spring backend services with the team.",
-        "Cut website load times by 40% via SQL/MongoDB optimization."
+        "Collaborated with backend engineers to design scalable, secure Java solutions using the Spring Framework.",
+        "Optimized SQL and MongoDB operations using JavaScript and SQL, reducing website load times by 40% and improving data retrieval.",
+        "Developed responsive React and CSS components for a ticketing system to improve usability and interface performance.",
+        "Improved Jenkins and GitHub Actions CI/CD pipelines to streamline deployments and reduce manual intervention."
       ]
     }
   ],
