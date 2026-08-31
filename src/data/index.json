@@ -81,7 +81,7 @@
       "period": "Sep 2024 – Present",
       "location": "Richmond, VA",
       "highlights": [
-        "Build Go backend services & REST APIs across tenancy & data, including new APIs for account-information updates.",
+        "Develop Go backend services and APIs supporting dataset ingestion, egress, and data-quality workflows",
         "Automate AWS data pipelines (S3 → OneStream) with SQS/DLQ, Step Functions and Lambda.",
         "Maintain CI/CD on Jenkins, monitor with CloudWatch/PagerDuty, and remediate security vulnerabilities.",
         "Sustain 90%+ SonarQube coverage with Testify unit tests."
@@ -90,9 +90,9 @@
     {
       "id": "2",
       "role": "Software Engineer",
-      "company": "Acetech Group",
-      "period": "Jan 2023 – Aug 2024",
-      "location": "Maryland, MD",
+      "company": "ADT",
+      "period": "Dec 2023 – Aug 2024",
+      "location": "Remote",
       "highlights": [
         "Built ReactJS front-ends and Go REST APIs for scalable order management.",
         "Designed serverless order fulfillment on AWS (Lambda, Step Functions, EC2/S3/RDS).",
